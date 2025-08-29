@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Emergency Service Directory</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="lg:mx-15 my-[0.9375rem] flex justify-center lg:justify-between items-center"
+      >
+        <div class="items-center gap-[0.625rem] hidden lg:flex">
+          <img
+            src="assets/logo.png"
+            alt="Emergency Service Logo"
+            class="h-[3.125rem]"
+          />
+          <div class="inter-black text-[#006747] text-xl">
+            <p class="mb-[-0.2rem]">Emergency</p>
+            <p>Service</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div
+            class="bg-[rgba(65,255,107,10%)] inter-black text-base px-[2.21875rem] py-[0.6875rem] flex items-center gap-[0.625rem] rounded-full"
+          >
+            <p id="heart">0</p>
+            <img
+              src="assets/heart.png"
+              alt="heart"
+              class="w-[1.875rem] h-[1.875rem]"
+            />
+          </div>
+          <div
+            class="bg-[rgba(65,255,107,10%)] inter-black text-base px-5 py-[0.875rem] flex items-center gap-[0.625rem] rounded-full"
+          >
+            <p id="coin">100</p>
+            <img src="assets/coin.png" alt="coin" class="w-6 h-6" />
+          </div>
+          <div
+            class="bg-[#00A63E] text-white inter-semi-bold text-base px-[2.21875rem] py-[0.6875rem] flex items-center gap-[0.625rem] rounded-full"
+          >
+            <p><span id="copy">2</span> Copy</p>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="w-full py-[1.3125rem] px-5 lg:px-15 bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] flex flex-col items-center gap-[0.6875rem] text-white text-center"
+      >
+        <img
+          src="assets/logo-dark.png"
+          alt="Emergency Service Logo"
+          class="h-23 w-23"
+        />
+        <h1 class="hind-madurai-bold text-[2.5rem]">
+          Emergency Service Directory
+        </h1>
+        <p class="hind-madurai-semibold text-xl">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+  </body>
+</html>
