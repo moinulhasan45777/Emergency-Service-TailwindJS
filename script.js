@@ -56,3 +56,22 @@ const clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", function () {
   historySection.innerHTML = "";
 });
+
+// Handling Copy Buttons
+const copyButtons = document.querySelectorAll(".copy-button");
+const copy = document.getElementById("copy");
+let copyCount = parseInt(copy.innerText);
+
+copyButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    copyToClipboard(
+      button.parentElement.previousElementSibling.querySelector("p").innerText
+    );
+    alert("Number Copied to Clipboard!");
+    copy.innerText = ++copyCount;
+  });
+});
+
+async function copyToClipboard(number) {
+  await navigator.clipboard.writeText(number);
+}
