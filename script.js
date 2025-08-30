@@ -50,3 +50,9 @@ callButtons.forEach((button) => {
     }
   });
 });
+
+// Handling Clear Button
+const clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", function () {
+  historySection.innerHTML = "";
+});
