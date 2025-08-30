@@ -20,6 +20,7 @@ callButtons.forEach((button) => {
     if (parseInt(coins.innerText) < 20) {
       alert("Insufficient Coins.\n20 Coins Required for a Call");
     } else {
+      let now = new Date();
       let serviceName =
         button.parentElement.previousElementSibling.previousElementSibling.querySelector(
           "h2"
@@ -43,8 +44,12 @@ callButtons.forEach((button) => {
                 ${serviceNumber}
               </p>
             </div>
-            <p class="hind-madurai-regular text-[1.125rem] text-gray-700">
-              11:36:58 AM
+            <p class="hind-madurai-regular text-[1.125rem] text-gray-700 flex-shrink-0">
+              ${now.toLocaleTimeString("en-US", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+              })}
             </p>
           </div>` + historySection.innerHTML;
     }
