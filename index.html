@@ -71,9 +71,11 @@
         </p>
       </div>
     </header>
-    <main class="bg-[#F5FFF6] py-12 px-15 grid grid-cols-[3fr_1fr]">
+    <main
+      class="bg-[#F5FFF6] py-12 px-15 grid grid-cols-1 lg:grid-cols-[3.5fr_1fr] gap-[1.875rem]"
+    >
       <!-- Emergency Hotline Section -->
-      <div class="grid grid-cols-3 gap-[1.875rem]">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-[1.875rem]">
         <div class="p-8 rounded-[0.75rem] bg-white shadow-md">
           <div class="flex justify-between items-center mb-4">
             <div class="p-[0.875rem] rounded-[1rem] bg-[#FFE3E2]">
@@ -106,6 +108,102 @@
               class="bg-gray-100 px-4 py-[0.375rem] text-[1.125rem] text-gray-500 rounded-full"
             >
               All
+            </span>
+          </div>
+          <div class="flex h-10 gap-2">
+            <button
+              id="copy"
+              class="outline-1 outline-gray-200 rounded-lg flex justify-center items-center gap-2 w-full"
+            >
+              <img src="assets/copy.png" alt="Copy Icon" class="w-4 h-4" />
+              <p class="roboto-regular text-[1.125rem] text-gray-500">Copy</p>
+            </button>
+            <button
+              id="call"
+              class="bg-green-600 rounded-lg flex justify-center items-center gap-2 w-full"
+            >
+              <img src="assets/telephone.png" alt="Copy Icon" class="w-4 h-4" />
+              <p class="inter-light text-base text-white">Call</p>
+            </button>
+          </div>
+        </div>
+        <div class="p-8 rounded-[0.75rem] bg-white shadow-md">
+          <div class="flex justify-between items-center mb-4">
+            <div class="p-[0.875rem] rounded-[1rem] bg-[#DFEFFF]">
+              <img
+                src="assets/police.png"
+                alt="Emergency Logo"
+                class="h-8 w-8"
+              />
+            </div>
+            <img
+              id="heart-button"
+              src="assets/heart-outline.png"
+              alt="Outlined Heart Icon"
+              class="w-5 h-5"
+            />
+          </div>
+          <div class="mb-6">
+            <h2 class="hind-madurai-bold text-2xl">Police Helpline Number</h2>
+            <p class="roboto-regular text-[1.125rem] text-gray-500">Police</p>
+          </div>
+          <div class="mb-6">
+            <p class="roboto-bold text-[2.1rem] leading-[2.5rem] mb-[0.5rem]">
+              999
+            </p>
+            <span
+              class="bg-gray-100 px-4 py-[0.375rem] text-[1.125rem] text-gray-500 rounded-full"
+            >
+              Police
+            </span>
+          </div>
+          <div class="flex h-10 gap-2">
+            <button
+              id="copy"
+              class="outline-1 outline-gray-200 rounded-lg flex justify-center items-center gap-2 w-full"
+            >
+              <img src="assets/copy.png" alt="Copy Icon" class="w-4 h-4" />
+              <p class="roboto-regular text-[1.125rem] text-gray-500">Copy</p>
+            </button>
+            <button
+              id="call"
+              class="bg-green-600 rounded-lg flex justify-center items-center gap-2 w-full"
+            >
+              <img src="assets/telephone.png" alt="Copy Icon" class="w-4 h-4" />
+              <p class="inter-light text-base text-white">Call</p>
+            </button>
+          </div>
+        </div>
+        <div class="p-8 rounded-[0.75rem] bg-white shadow-md">
+          <div class="flex justify-between items-center mb-4">
+            <div class="p-[0.875rem] rounded-[1rem] bg-[#FFE3E2]">
+              <img
+                src="assets/fire-service.png"
+                alt="Emergency Logo"
+                class="h-8 w-8"
+              />
+            </div>
+            <img
+              id="heart-button"
+              src="assets/heart-outline.png"
+              alt="Outlined Heart Icon"
+              class="w-5 h-5"
+            />
+          </div>
+          <div class="mb-6">
+            <h2 class="hind-madurai-bold text-2xl">Fire Service Number</h2>
+            <p class="roboto-regular text-[1.125rem] text-gray-500">
+              Fire Service
+            </p>
+          </div>
+          <div class="mb-6">
+            <p class="roboto-bold text-[2.1rem] leading-[2.5rem] mb-[0.5rem]">
+              999
+            </p>
+            <span
+              class="bg-gray-100 px-4 py-[0.375rem] text-[1.125rem] text-gray-500 rounded-full"
+            >
+              Fire
             </span>
           </div>
           <div class="flex h-10 gap-2">
@@ -431,106 +529,33 @@
             </button>
           </div>
         </div>
-        <div class="p-8 rounded-[0.75rem] bg-white shadow-md">
-          <div class="flex justify-between items-center mb-4">
-            <div class="p-[0.875rem] rounded-[1rem] bg-[#FFE3E2]">
-              <img
-                src="assets/emergency.png"
-                alt="Emergency Logo"
-                class="h-8 w-8"
-              />
-            </div>
-            <img
-              id="heart-button"
-              src="assets/heart-outline.png"
-              alt="Outlined Heart Icon"
-              class="w-5 h-5"
-            />
+      </div>
+      <!-- History Section -->
+      <div class="bg-white rounded-xl h-full p-6 shadow-lg">
+        <div class="flex justify-between items-center mb-[1rem]">
+          <div class="flex items-center gap-[0.5rem]">
+            <img src="assets/clock.png" alt="Clock Icon" class="w-6 h-6" />
+            <p class="roboto-semibold text-[1.125rem]">Call History</p>
           </div>
-          <div class="mb-6">
-            <h2 class="hind-madurai-bold text-2xl">
-              National Emergency Number
-            </h2>
-            <p class="roboto-regular text-[1.125rem] text-gray-500">
-              National Emergency
-            </p>
-          </div>
-          <div class="mb-6">
-            <p class="roboto-bold text-[2.1rem] leading-[2.5rem] mb-[0.5rem]">
-              999
-            </p>
-            <span
-              class="bg-gray-100 px-4 py-[0.375rem] text-[1.125rem] text-gray-500 rounded-full"
-            >
-              All
-            </span>
-          </div>
-          <div class="flex h-10 gap-2">
-            <button
-              id="copy"
-              class="outline-1 outline-gray-200 rounded-lg flex justify-center items-center gap-2 w-full"
-            >
-              <img src="assets/copy.png" alt="Copy Icon" class="w-4 h-4" />
-              <p class="roboto-regular text-[1.125rem] text-gray-500">Copy</p>
-            </button>
-            <button
-              id="call"
-              class="bg-green-600 rounded-lg flex justify-center items-center gap-2 w-full"
-            >
-              <img src="assets/telephone.png" alt="Copy Icon" class="w-4 h-4" />
-              <p class="inter-light text-base text-white">Call</p>
-            </button>
-          </div>
+          <button
+            class="bg-[#00A63E] text-white rounded-full inter-regular text-[1rem] px-9 py-[0.875rem]"
+          >
+            Clear
+          </button>
         </div>
-        <div class="p-8 rounded-[0.75rem] bg-white shadow-md">
-          <div class="flex justify-between items-center mb-4">
-            <div class="p-[0.875rem] rounded-[1rem] bg-[#FFE3E2]">
-              <img
-                src="assets/emergency.png"
-                alt="Emergency Logo"
-                class="h-8 w-8"
-              />
+        <div id="call-histories">
+          <div
+            class="p-[1rem] w-full bg-gray-50 rounded-lg flex items-center justify-between gap-[1rem]"
+          >
+            <div>
+              <p class="inter-semibold text-[1.125rem]">Fire Service Number</p>
+              <p class="hind-madurai-regular text-[1.125rem] text-gray-500">
+                999
+              </p>
             </div>
-            <img
-              id="heart-button"
-              src="assets/heart-outline.png"
-              alt="Outlined Heart Icon"
-              class="w-5 h-5"
-            />
-          </div>
-          <div class="mb-6">
-            <h2 class="hind-madurai-bold text-2xl">
-              National Emergency Number
-            </h2>
-            <p class="roboto-regular text-[1.125rem] text-gray-500">
-              National Emergency
+            <p class="hind-madurai-regular text-[1.125rem] text-gray-700">
+              11:36:58 AM
             </p>
-          </div>
-          <div class="mb-6">
-            <p class="roboto-bold text-[2.1rem] leading-[2.5rem] mb-[0.5rem]">
-              999
-            </p>
-            <span
-              class="bg-gray-100 px-4 py-[0.375rem] text-[1.125rem] text-gray-500 rounded-full"
-            >
-              All
-            </span>
-          </div>
-          <div class="flex h-10 gap-2">
-            <button
-              id="copy"
-              class="outline-1 outline-gray-200 rounded-lg flex justify-center items-center gap-2 w-full"
-            >
-              <img src="assets/copy.png" alt="Copy Icon" class="w-4 h-4" />
-              <p class="roboto-regular text-[1.125rem] text-gray-500">Copy</p>
-            </button>
-            <button
-              id="call"
-              class="bg-green-600 rounded-lg flex justify-center items-center gap-2 w-full"
-            >
-              <img src="assets/telephone.png" alt="Copy Icon" class="w-4 h-4" />
-              <p class="inter-light text-base text-white">Call</p>
-            </button>
           </div>
         </div>
       </div>
